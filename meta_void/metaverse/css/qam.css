@@ -1,0 +1,329 @@
+/* QAM & Participant */
+
+.qam {
+    z-index: 9999;
+    background-color: #ffffff;
+    position: fixed;
+    top: 66px;
+    right: 11px;
+    width: 384px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 27px 28px 32px 28px;
+    border-radius: 12px;
+    display: none;
+    max-height: 511px;
+    user-select: none;
+	color: #494642;
+}
+
+.qam hr {
+    display: block;
+    margin: 16px 4px 16px 4px;
+    border-top: 1px solid #373341;
+    height: 0px;
+}
+
+.qam#Participants hr {
+    margin: 16px 4px 0px 4px;
+}
+
+.qam>h3 {
+    margin-bottom: 20px;
+}
+
+.qam .back {
+    width: 14px;
+    height: auto;
+    top: 31px;
+    left: 32px;
+    position: absolute;
+}
+
+.qam .close {
+    width: 13px;
+    height: auto;
+    top: 31px;
+    right: 32px;
+    position: absolute;
+}
+
+.qam label,
+.tool label {
+    color: #494642;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.qam .centercenter {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.qam .tile,
+.tool .tile {
+    flex-basis: 33.333%;
+    box-sizing: border-box;
+    padding: 8px 8px 14px 8px;
+}
+
+.qam .tile.loading,
+.qam .tile.disabled,
+.qam .selectiontile.disabled,
+.qam .toggle-game.disabled {
+    pointer-events: none;
+}
+
+.qam .tile.disabled,
+.qam .selectiontile.disabled,
+.qam .toggle-game.disabled {
+    opacity: 0.25;
+}
+
+.qam .tile .toggle-game,
+.qam .tile .radio-game,
+.qam .tile .button-game,
+.tool .tile .button-game {
+    width: 100%;
+    border: none;
+    background-color: #009CC3;
+    border-radius: 15px;
+    padding: 15px 0;
+    margin-bottom: 11px;
+    height: 56px;
+    box-sizing: border-box;
+    -webkit-transition: all 500ms ease-in-out;
+}
+.qam  .toggle-game .button-audio svg,
+.toggle-game .button-audio{
+  
+    background-color: #009CC3;
+   
+}
+
+
+.qam .tile .toggle-game:hover,
+.qam .tile .radio-game:hover,
+.qam .tile .button-game:hover {
+    background-color: #038bad;
+}
+
+.qam .tile.active .toggle-game {
+    background-color: #494642;
+}
+
+.qam .tile .toggle-game img,
+.qam .tile .radio-game img,
+.qam .tile .button-game img,
+.tool .tile .button-game img {
+    height: 100%;
+    filter: var(--filterColor_White);
+    -webkit-transition: all 500ms ease-in-out;
+}
+
+.qam .tile.active .toggle-game img {
+    filter: #fff;
+}
+
+
+/* Special Cases Buttons */
+
+.qam .tile .toggle-game#voiceMicrophone img {
+    background-image: url(../svg/voiceMicrophoneOn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.qam .tile.disabled .toggle-game#voiceMicrophone img {
+    background-image: url(../svg/voiceMicrophoneOff.svg);
+}
+
+.qam .tile .button-game img {
+    width: 50%;
+    transform: scale(2);
+}
+
+.qam:not() .tool .tile .button-game {
+    border-radius: 4px;
+}
+
+.social .tool .tile .button-game {
+    border-radius: 4px;
+}
+
+
+/* Selection Tile */
+
+.qam .selectiontile {
+    display: inline-flex;
+    padding: 8px 8px 14px 8px;
+    width: 100%;
+}
+
+.qam .selectiontile .tile {
+    padding: 0;
+}
+
+.qam .selectiontile .radio-game {
+    width: 100%;
+    /* Prevent background color leak outs */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.qam .selectiontile .tile:first-child .radio-game {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.qam .selectiontile .tile:last-child .radio-game {
+    border-radius: 0 15px 15px 0;
+}
+
+.qam .selectiontile input:checked+.radio-game {
+    background-color: #494642;
+}
+
+.qam .selectiontile input:checked+.radio-game img {
+    filter: #fff;
+}
+
+
+/* Participants */
+
+.participants-group {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#part_users {
+    overflow-y: scroll;
+    max-height: 405px;
+    width: 100%;
+}
+
+#modToolsParticipants {
+    margin-bottom: 0px !important
+}
+
+#modToolsParticipants>div {
+    padding: 28px 10px 14px 10px;
+    /* padding: 28px 10px 14px 10px; */
+    /* padding: 28px 10px 0 10px; */
+}
+
+.user-block {
+    display: flex;
+}
+
+.button-speaker .button.grau {
+    background-color: #454353;
+    color: #fff;
+    margin: 0;
+    border: 0px;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 12px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 12px;
+    -webkit-transition: all 500ms ease-in-out;
+}
+
+.button-speaker .button.grau#mute {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.button-speaker .button.grau#mute.joined {
+    pointer-events: unset;
+    opacity: unset;
+}
+
+.button-speaker .button.grau#mute img {
+    background-image: url(../svg/icon_microphone_on.svg);
+}
+
+.button-speaker .button.grau#mute.disabled img {
+    background-image: url(../svg/icon_microphone_off.svg);
+}
+
+.button-speaker .button.grau#mute.muted img {
+    background-image: url(../svg/icon_microphone_muted.svg);
+    filter: var(--filterColor_Red);
+}
+
+.button-speaker .button.grau#kickUser img {
+    background-image: url(metaverse/images/speak-no.svg);
+}
+
+.user-block .userimage #part_profileSpeakingOutline {
+    border-radius: 50%;
+    border: 0px solid transparent;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.user-block .userimage #part_profileSpeakingOutline.speaking {
+    border: 0px solid var(--activeColor);
+}
+
+.user-block .userimage #part_profileSpeakingOutline .blablabla {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#part_profileSpeakingOutline img {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-block .userimage #part_profileSpeakingOutline.speaking .blablabla {
+    display: block;
+}
+
+#part_users>div {
+    padding: 14px 5px 14px 12px;
+}
+
+#part_users>div.userheader {
+    padding: 0;
+}
+
+#part_users>div:nth-child(2n+3) {
+    background-color: #2e2b37;
+}
+
+.user-block #part_name {
+    flex-basis: 100%;
+    text-align: left;
+   
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.user-block .button-speaker {
+    flex-basis: 110px;
+    display: flex;
+    padding: 0 7px 0 0;
+    justify-content: flex-end;
+}
+
+.user-block .userimage {
+    flex-basis: 50px;
+    display: flex;
+    position: relative;
+}

@@ -1,0 +1,485 @@
+#v-museo-meta-art-meet-,
+#v-meta-art-meet- {
+    padding-bottom: 150px;
+}
+
+.titel-details {
+    padding: 20px 0;
+    background-color: #c0c2d5;
+    min-height: 134px;
+    box-sizing: border-box;
+}
+
+#myEvents>div,
+#favoritedEvents>div,
+#otherEvents>div {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#eventsDetail {
+    width: 33.333%;
+    margin: 0 auto;
+}
+
+.eventsDetail-box {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 400px !important;
+    box-sizing: border-box;
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+    color: #000;
+}
+
+#eventsDetail {
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.eventsDetail-box {
+    width: 33.3%;
+}
+
+#eventsDetail .eventsDetail-box {
+    margin: 16px;
+}
+
+#createEvent .eventsDetail-box:nth-child(1),
+#eventsDetail .eventsDetail-box:nth-child(1) {
+    box-sizing: border-box;
+    padding-right: 68px;
+}
+
+.eventsDetail-box h2 {
+    margin-top: 10px;
+}
+
+.meeting .text {
+    display: block;
+    position: relative;
+    padding-bottom: 56px;
+    width: 100%;
+}
+
+.eventsDetail-content {
+    padding: 20px 32px 32px 32px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#v-museo-meta-art-meet->.meeting,
+#v-meta-art-meet->.meeting {
+    max-width: 1296px;
+    padding: 104px 46px 0 46px;
+    margin: 0 auto;
+}
+
+#allEventCategories .button {
+    background-color: var(--activeColor);
+    color: #fff;
+    position: absolute;
+    bottom: 32px;
+    width: 336px;
+    left: 32px;
+    right: 32px;
+    min-height: 56px;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+}
+
+.eventsDetail-content .button {
+    background-color: var(--activeColor);
+    color: #fff;
+    bottom: 32px;
+    width: 336px;
+    min-height: 56px;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+    width: 100%;
+}
+
+.kleingrau {
+    font-size: 12px;
+    color: #6D6D6D;
+    padding-bottom: 5px;
+}
+
+#event_owner,
+#detailHostName {
+    padding-top: 10px;
+}
+
+.eventsDetail-content button {
+    width: 100%;
+}
+
+.hosted .quadrat {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.meeting {
+    position: relative;
+    padding: 100px 0;
+    margin: 0 auto;
+    max-width: 1296px;
+    box-sizing: border-box;
+}
+
+.titel-details {
+    display: flex;
+    padding: 20px 0;
+    align-content: space-between;
+    align-items: center;
+}
+
+.titel-details .date {
+    width: 80px;
+    /* border-right: 1px solid #000; */
+}
+
+.titel-details .title-box-meta {
+    padding-left: 20px;
+    border-left: 1px solid #000;
+    height: 84px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 266px;
+    hyphens: auto;
+}
+
+#myEvents>div {}
+
+#myEvents>.order3 {
+    position: relative;
+    min-height: 300px;
+}
+
+#myEvents>.order3 .button {
+    top: 50%;
+    position: absolute;
+    margin-top: -20px;
+    width: auto;
+    left: 20px;
+    display: block;
+    right: 20px;
+    bottom: inherit;
+}
+
+
+/* Normal Event */
+
+.normal {
+    background-image: url(metaverse/images/norm.svg);
+    background-repeat: repeat-x;
+    background-size: 30px;
+}
+
+.normal .button,
+.normal .header-details {
+    background-color: #8186AC !important;
+}
+
+.normal .titel-details {
+    background-color: #C0C2D5 !important;
+}
+
+
+/* Live Event */
+
+.live {
+    background-image: url(metaverse/images/live.svg);
+    background-repeat: repeat-x;
+    background-size: 30px;
+}
+
+.live .button,
+.live .header-details {
+    background-color: var(--dangerColor) !important;
+}
+
+.live .titel-details {
+    background-color: #FFB1B1 !important;
+}
+
+
+/* Personal Event */
+
+.personal {
+    background-image: url(metaverse/images/pers.svg);
+    background-repeat: repeat-x;
+    background-size: 30px;
+}
+
+.personal .button,
+.personal .header-details {
+    background-color: var(--activeColor) !important;
+}
+
+.personal .titel-details {
+    background-color: #A8BDF8 !important;
+}
+
+
+/* Over Event */
+
+.over {
+    background-image: url(metaverse/images/pers.svg);
+    background-repeat: repeat-x;
+    background-size: 30px;
+}
+
+.over .button,
+.over .header-details {
+    background-color: #484848 !important;
+}
+
+.over .titel-details {
+    background-color: #c9c9c9 !important;
+}
+
+.Public,
+.Private {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 13px;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.Public {
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Private {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.margintop10 {
+    margin-top: 10px;
+}
+
+.marginbottom10 {
+    margin-bottom: 10px;
+}
+
+.button-icon {
+    background-color: transparent;
+    border: none;
+    float: right;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    margin-top: -2px;
+    outline: none;
+    border-radius: 50%;
+    margin-left: 4px;
+    position: relative;
+}
+
+.button-icon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    float: right;
+    width: 26px;
+    height: 26px;
+    outline: none;
+}
+
+.button-icon .tooltip {
+    display: none;
+    position: absolute;
+    min-width: 20px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    bottom: -25px;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.button-icon:hover .tooltip {
+    display: block;
+    position: absolute;
+    min-width: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.button-icon:focus {
+    outline: none;
+}
+
+.button-icon img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    margin-top: -1px;
+}
+
+div.header-details>div:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+
+#createEvent .doppelbutton .button span {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-radius: 0px;
+    background-color: #C3C3C3;
+    border: none;
+    color: #262626;
+    font-size: 16px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+  
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.1em;
+    height: 56px;
+}
+
+button#createevent {
+    font-size: 19px;
+    height: 56px;
+    box-sizing: border-box;
+}
+
+#createEvent .doppelbutton .button span.active {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    border-radius: 0px;
+    background-color: #94aef6;
+    border: none;
+    color: #fff;
+    
+    height: 56px;
+}
+
+.header-details {
+    background-color: var(--activeColor);
+    padding: 13px 32px;
+    min-height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#event_title,
+#detailTitle {
+
+    font-size: 28px;
+    line-height: 35px;
+}
+
+#event_title {
+  
+    font-size: 28px;
+    line-height: 1em;
+    padding-bottom: 10px;
+}
+
+.date-month {
+  
+    font-size: 16px;
+    text-align: center;
+}
+
+.date-day {
+
+    font-size: 28px;
+    text-align: center;
+}
+
+#event_description {
+  
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0px;
+    word-wrap: break-word;
+    width: 336px;
+}
+
+#createEvent {
+    width: 100%;
+    margin: 0 auto;
+    color: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#createEvent .flex>div {
+    width: 400px;
+    margin: 16px
+}
+
+.createEvent-box {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 400px;
+    margin: 0 auto;
+    color: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 13px;
+    display: block;
+    height: 600px;
+}
+
+#createEvent input {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #262626;
+    color: white;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    height: 39px;
+}
+
+#createEvent input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+#createEvent #eventtitle:required:valid {
+    background-image: url(metaverse/images/korrekt.svg);
+    background-position: right 10px top 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+#createEvent #eventdescription:required:valid {
+    background-image: url(metaverse/images/korrekt.svg);
+    background-position: right 10px top 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,221 @@
+body {
+    width: 100%;
+    padding: 0;
+
+    margin: 0;
+}
+
+.museum {
+    background-color: white;
+}
+
+.container {
+    width: 200px;
+    /* display: flex;
+    flex-direction: column; */
+    /* background-color: yellow; */
+}
+
+.container>h4 {
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+input:focus {
+    /* border: none; */
+    outline: none;
+    background-color: rgb(32, 32, 32);
+}
+
+.invalid {
+    border-color: rgb(158, 28, 28);
+    color: rgb(158, 28, 28);
+}
+
+.invalid:focus {
+    background-color: rgb(53, 27, 27);
+}
+
+.container>button {
+    margin-top: 20px;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+.title h1 {
+    line-height: 100px;
+}
+
+.title>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn {
+    margin: 2px;
+    width: auto;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-family: Bodoni;
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 30px 10px 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+#linkForgotPassword {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a {
+    color: gray;
+    /* font-size: 0.9rem; */
+}
+
+.btn-action {
+    /* background-color: transparent;
+    color: white;
+    font-family: Bodoni;
+    padding: 0;
+    margin:0;
+    font-size: 18px;
+    cursor: pointer; */
+}
+
+.btn-secondary {
+    /* color: dodgerblue;
+    background-color: black; */
+    color: gray;
+}
+
+.hide {
+    display: none;
+}
+
+#museumInfo {
+    margin-bottom: 50px;
+}
+
+#loginLink {
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: stretch; */
+}
+
+.header {
+    /* width: 100%;
+    background-color: black; */
+    font-family: Bodoni;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    /* height: 20px; */
+    justify-content: space-between;
+    padding: 0 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+#userEmail {
+    font-family: Din;
+    color: black;
+}
+
+#btnLogout,
+#btnAdmin {
+    background-color: transparent;
+    font-family: Bodoni;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnLogout:hover,
+#btnAdmin:hover {
+    color: rgb(95, 95, 95);
+}
+
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+
+/* The slider itself */
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 1;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+
+/* Mouse-over effects */
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}

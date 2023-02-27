@@ -1,0 +1,43 @@
+.dashicons-admin-post::before,
+.dashicons-format-standard::before {
+    content: "\f105";
+    color: #f20029 !important;
+}
+
+.dashicons-admin-page::before {
+    content: "\f498";
+}
+
+.menu-icon-erstklassig .dashicons-admin-post::before {
+    content: "\f105";
+    color: #f20029 !important;
+}
+
+.layout {
+    border-bottom: 10px solid #23282d !important;
+    margin-bottom: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.layout:first-child .acf-fields .acf-field-5bdee7500a066,
+.layout:first-child .acf-fields .acf-field-5bebfba231580,
+.layout:first-child .acf-fields .acf-field-5bec05a1e1def {
+    display: none;
+}
+
+.acf-flexible-content>.acf-actions a.acf-button.button.button-primary {
+    background-color: : #f20029 !important;
+    background: #f20029;
+    border-color: #f20029;
+    text-shadow: 0 -1px 1px #c60224, 1px 0 1px #c60224, 0 1px 1px #c60224, -1px 0 1px #c60224;
+}
+
+.acf-postbox>.hndle .acf-hndle-cog {
+    color: #AAAAAA;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 2px;
+    float: right;
+    position: relative;
+    display: none !important;
+}

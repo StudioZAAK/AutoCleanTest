@@ -1,0 +1,105 @@
+:root {
+    /* Header */
+    --profileBackground: #fff;
+    --profileText: #000;
+}
+
+
+/* Provider only */
+
+body.provider .menu-item-1217,
+body.provider .menu-item-1218 {
+    display: none;
+}
+
+
+/* Provider and Email Login  */
+
+body.combined .menu-item-1217 {
+    display: none;
+}
+
+
+/* Anonymous Login */
+
+body.anonymous .menu-item-1217,
+body.anonymous .menu-item-1218,
+body.anonymous .menu-item-1219,
+body.anonymous .menu-item-1220 {
+    display: none;
+}
+
+#anonymousProfile {
+    display: none;
+}
+
+body.anonymous #anonymousProfile {
+    display: block;
+}
+
+body.anonymous .edit-profile {
+    display: none;
+}
+
+.header-profile {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    /* font-size: 30px; */
+    line-height: 1.5em;
+    padding-bottom: 0px;
+}
+
+.header-profile .flex {
+    display: flex;
+    height: 100%;
+}
+
+.header-profile .left {
+    flex-basis: 403px !important;
+    width: 403px !important;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+}
+
+.header-profile .right {
+    flex-basis: auto;
+    text-align: left;
+}
+
+body.header-profile {
+    top: -00vh;
+}
+
+.header-profile button {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    color: var(--profileText);
+    height: 42.5px;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.header-profile .menu button:hover {
+    color: #42404d;
+}
+
+.header-profile button.active,
+.header-profile button.active:hover {
+    background-color: var(--profileBackground);
+}
+
+.header-profile .right button {
+    padding: 16px 16px;
+    height: 56px;
+    margin-bottom: 22px;
+}

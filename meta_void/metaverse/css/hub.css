@@ -1,0 +1,34 @@
+:root {
+    --museumMainColor: #009CC3;
+}
+
+.museumbox h3 {
+    color: white;
+}
+
+button.button-museum,
+a.button-museum {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--museumMainColor);
+    color: #fff;
+    box-sizing: border-box;
+    display: block !important;
+    width: calc(100% - 64px);
+    height: 56px;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+    padding: 18px;
+}
+
+#gatherWarning {
+    display: none;
+}
+
+#gatherWarning.active {
+    display: block;
+}

@@ -1,0 +1,237 @@
+/* Sam */
+
+body.loggedIn :not(body.inProfile) .profileLoggedIn {
+    display: inline;
+}
+
+body.akk-qam #tools {
+    background-color: var(--headerActiveColor);
+}
+
+.profileLoggedIn {
+    display: none;
+}
+
+.profileLoggedOut {
+    display: inline;
+}
+
+body.loggedIn .profileLoggedOut {
+    display: none;
+}
+
+.profile-back {
+    display: none;
+}
+
+body.inProfile .profile-back {
+    display: inline;
+}
+
+#login-emailverification {
+    display: none;
+}
+
+body.unverified #login-emailverification {
+    display: inline;
+}
+
+.choose-experience {
+    top: 56px;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-loadmuseum {
+    top: 56px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1.2s, opacity 1.2s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 600;
+    left: 0;
+    display: block;
+}
+
+body.load .header-loadmuseum {
+    visibility: visible;
+    opacity: 1;
+}
+
+body.akk-qam #debugger {
+    display: block;
+}
+
+
+/* #screenMuseum {
+    top: 56px;
+    height: calc(100vh - 56px);
+} */
+
+#tools {
+    display: none;
+}
+
+body.museumJoined #tools {
+    display: inline;
+}
+
+body.inmuseum .footer {
+    display: none;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content:first-of-type {
+    display: block;
+}
+
+#mute.joined {
+    background-image: url(/metaverse/images/icon_microphone_on.svg);
+}
+
+#mute.muted {
+    background-image: url(/metaverse/images/icon_microphone_muted.svg);
+    background-color: white;
+}
+
+.user_mini {
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: #ecedef5d;
+}
+
+.login-form {
+    padding-top: 120px;
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
+
+ul#signUpEmailFeedback,
+ul#signUpPWFeedback {
+    color: rgb(245, 100, 100);
+    list-style: disc;
+    list-style-position: inside;
+}
+
+#menu-profil li:hover {
+    background-color: #42404d;
+    border-radius: 5px;
+}
+
+.pricing-toggle {
+    background-color: #3FAED7;
+    padding: 14px 5px;
+    border-radius: 30px;
+    display: inline-block
+}
+
+.pricing-toggle [name="pricing"] {
+    display: none
+}
+
+.pricing-toggle input[type="radio"]+label {
+    background-color: #3FAED7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pricing-toggle input[type="radio"]:checked+label {
+    background-color: white;
+    color: #00008B;
+}
+
+
+/* Last Call */
+
+.header-profile .right button {
+    width: 100%;
+    text-align: center;
+}
+
+br {
+    min-height: 20px;
+}
+
+#meetEventButton {
+    background-color: #537df1;
+    color: #fff;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+    width: auto;
+    min-height: 56px;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+    width: 336px;
+}
+
+.openEvents {
+    display: none;
+}
+
+body.loggedIn #myEventsblock {
+    display: block;
+}
+
+#event_timing {
+    text-transform: lowercase;
+}
+
+.inputverify {
+    text-align: right;
+    color: rgb(153, 153, 153);
+    /* margin-top: 5px; */
+    font-size: 15px;
+}
+
+#event-participants {
+    height: auto;
+    display: inline-block;
+    width: 100%;
+}
+
+#gform_confirmation_message_9 {
+    color: #537DF1;
+    list-style-type: disc;
+}
+
+body.loggedIn #menu-item-1790 {
+    display: none;
+}
+
+
+/* Tools */
+
+
+/* Microphone */
+
+
+/* 
+.toggle-game.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.button-game.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+#movementMode.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+} */
